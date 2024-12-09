@@ -47,6 +47,11 @@ button {
   line-height: 1.55;
 }
 
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* Header */
 .header {
   padding-top: 28px;

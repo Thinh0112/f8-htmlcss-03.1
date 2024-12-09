@@ -52,6 +52,14 @@ button {
   cursor: pointer;
 }
 
+.section-desc-lv1 {
+  color: #575d5e;
+  font-family: "Public Sans", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
 /* Header */
 .header {
   padding-top: 28px;
@@ -76,7 +84,7 @@ button {
 }
 
 .navbar-item__link {
-  padding: 2px 19px;
+  padding: 4px 19px;
   color: #575d5e;
   font-size: 1.8rem;
   font-weight: 500;
@@ -90,7 +98,6 @@ button {
 
 .navbar-item__link--active {
   position: relative;
-  padding-bottom: 25px;
 }
 
 .navbar-item__link--active::after {
@@ -100,8 +107,8 @@ button {
   height: 2px;
   position: absolute;
   left: 20px;
-  bottom: -7px;
-  background: #143c3c;
+  bottom: -29px;
+  background: var(--primary-color);
 }
 
 .header__border {
@@ -113,4 +120,110 @@ button {
     #dddcdc 51.09%,
     rgba(212, 212, 212, 0) 99.68%
   );
+}
+
+/* Hero */
+.hero {
+  font-family: "Public Sans", serif;
+}
+
+.hero__inner {
+  display: flex;
+  column-gap: 76px;
+  padding-top: 28px;
+}
+
+.hero-left {
+  margin-top: 75px;
+  width: 34.47%;
+  flex-shrink: 0;
+}
+
+.hero-left__heading {
+  width: 93.64%;
+  margin-bottom: 20px;
+  color: #152427;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.hero-left__row {
+  margin-top: 42px;
+  display: flex;
+}
+
+.hero-left__row--playvideo {
+  margin-left: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-left__play {
+  position: relative;
+  left: -23px;
+  cursor: pointer;
+}
+
+.hero-left__watch {
+  margin-left: -9px;
+  color: #152427;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  cursor: pointer;
+}
+
+.hero-right {
+  position: relative;
+  /* width: 340px;
+  height: 340px;
+  border-radius: 340px;
+  background: #4dbb9a;
+  margin: 0 auto;
+  filter: blur(137px); */
+}
+
+.hero-right__images {
+  margin-top: 32px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.hero-right__img {
+  width: 202px;
+  height: 466px;
+  object-fit: cover;
+  border-radius: 110px;
+}
+
+.hero-right__img:nth-child(2) {
+  position: relative;
+  top: 77px;
+}
+
+.hero-right__flower-top {
+  position: absolute;
+  top: 0;
+  left: -170px;
+}
+
+.hero-right__avstract-top {
+  position: absolute;
+  left: -46px;
+}
+
+.hero-right__flower-bottom {
+  position: absolute;
+  bottom: -152px;
+  right: 40px;
+}
+
+.hero-right__avstract-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: -48px;
 }
